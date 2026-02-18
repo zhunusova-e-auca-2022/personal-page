@@ -19,7 +19,6 @@ body {
 .container > * {
     background-color: lightblue;
     font-size: 10rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 200.5px;
     color: blue;
     border: 2px dashed blue;
