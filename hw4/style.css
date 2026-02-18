@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://cdn.imgchest.com/files/myd5crrqj4b.png");
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21.015px;
+}
+
+.container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 200.5px;
+    color: blue;
+    border: 2px dashed blue;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.box1 { flex-basis: 100%;}
+.box2 { flex-basis: 22.14%;}
+.box3 { flex-basis: 76.36%}
+.box4 { flex-basis: 38.71%}
+.box5 { flex-basis: 38.78%}
+.box6 { flex-basis: 19.5%}  
