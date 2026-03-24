@@ -54,6 +54,7 @@ ul {
 
 ul > * {
     background: pink;
+    /* padding: .5rem; */
 }
 
 .info {
