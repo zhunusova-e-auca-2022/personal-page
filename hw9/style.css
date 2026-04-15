@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto Condensed');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-image: url(https://cdn.imgchest.com/files/j7kzcbm6r7m.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 1173px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+
+.buttonMenu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    z-index: 1000; 
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+
+    grid-template-rows: minmax(95px, auto) minmax(40px, auto) minmax(120px, auto) minmax(636px, auto) minmax(481px, auto);
+    grid-template-columns: minmax(0, 200px) minmax(0, 570px) minmax(0, 400px);
+
+    grid-template-areas: 
+    "one one one"
+    "two six six"
+    "three three three"
+    "four four seven"
+    "five five five";
+}
+
+.box1 { 
+    grid-area: one;
+}
+.box2 { 
+    grid-area: two;
+}
+.box3 { 
+    grid-area: three;
+}
+.box4 { 
+    grid-area: four;
+}
+.box5 { 
+    grid-area: five;
+}
+.box6 { 
+    display: none;
+}
+.box7 { 
+    grid-area: seven;
+}
+
+.box6 ul {
+    font-family: Roboto Condensed;
+    font-size: 14px;
+    font-weight: normal;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    background-color: #183a52;
+    color: #ffffff;
+
+    max-width: 100%;
+    height: 100%;
+
+    justify-content: right;
+    align-items: stretch;
+}
+
+.box6.mobileMenu {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #183a52;
+}
+
+.box6.mobileMenu ul {
+    flex-direction: column;
+}
+
+.box6 li {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    background-color: #286189;
+    flex-basis: 83px;
+    display: flex;
+    justify-content: center;
+    margin-right: 14px;
+}
+.power {
+    flex-basis: 76px;
+}
+.society {
+    flex-basis: 94px;
+}
+.ocasions {
+    flex-basis: 127px;
+}
+.business {
+    flex-basis: 75px;
+}
+.inworld {
+    flex-basis: 73px;
+}
+.entertainment {
+    flex-basis: 114px;
+}
+.kyrgyz {
+    flex-basis: 115px;
+}
+.search {
+    flex-basis: 83px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 100%; 
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+      "one"
+      "two"
+      "three"
+      "four"
+      "seven"
+      "five";
+  }
+
+  .buttonMenu {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+}
