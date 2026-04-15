@@ -17,8 +17,8 @@ body {
 }
 
 .buttonMenu {
-    display: none; /* Keeps it hidden on desktop */
-    position: absolute; /* Prevents it from pushing content down */
+    display: none; 
+    position: absolute; 
     background: none;
     border: none;
     cursor: pointer;
@@ -140,7 +140,6 @@ body {
   .container {
     grid-template-columns: 100%; 
     grid-template-rows: auto;
-    /* Removed "six" from here so it doesn't leave a blank row */
     grid-template-areas: 
       "one"
       "two"
@@ -151,10 +150,9 @@ body {
   }
 
   .box6 {
-    display: none; /* Hides the horizontal menu on small screens */
+    display: none; 
   }
 
-  /* Show the button only on narrow screens */
   .buttonMenu {
     display: block;
     position: fixed; 
@@ -165,7 +163,6 @@ body {
     color: white;
   }
 
-  /* This allows the menu to appear on top when clicked */
   .box6.mobileMenu {
     display: block;
     position: fixed;
