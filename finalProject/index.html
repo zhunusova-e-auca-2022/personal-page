@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" class="style" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0; z-index: 2000;'>Style</button>
+    
+    <button class="buttonMenu fa fa-bars"></button>
+    <img src='https://cdn.imgchest.com/files/myd5cr2664b.png' style='position: absolute; top:0; left:0;z-index:-1'>
+    
+    <div class="container">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">
+        <ul>
+            <li class="main">ГЛАВНАЯ</li>
+            <li class="power">ВЛАСТЬ</li>
+            <li class="society">ОБЩЕСТВО</li>
+            <li class="ocasions">ПРОИСШЕСТВИЯ</li>
+            <li class="business">БИЗНЕС</li>
+            <li class="inworld">В МИРЕ</li>
+            <li class="entertainment">РАЗВЛЕЧЕНИЯ</li>
+            <li class="kyrgyz">🇰🇬КЫРГЫЗЧА</li>
+            <li class="search">🔍</li>
+        </ul>
+      </div>
+      <div class="box7">7</div>
+    </div>
+
+    <script>
+        function switchStyle() {
+            let style = document.querySelector('.style');
+            if (style.getAttribute('href') == 'style.css') {
+                style.setAttribute('href', 'style2.css');
+            } else {
+                style.setAttribute('href', 'style.css');
+            }
+        }
+
+        const buttonMenu = document.querySelector('.buttonMenu');
+        const boxSix = document.querySelector('.box6');
+
+        buttonMenu.addEventListener('click', () => {
+            boxSix.classList.toggle('mobileMenu');
+        });
+    </script>
+  </body>
+</html>
